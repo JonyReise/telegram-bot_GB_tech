@@ -4,10 +4,10 @@ from keyboards.reply import main_reply_keyboard
 from keyboards.inline import inline_menu
 
 def register_reply_handlers(dp):
-    @dp.message(F.text == "ℹ️ О боте")
+    @dp.message(F.text == "🔁 Змінити магазин")
     async def cmd_about(message: Message):
         await message.answer(
-            "ℹ️ <b>О боте</b>\n\nВерсия: 1.0.0\nСоздан на: aiogram 3.x",
+            "ℹ️ <b>Магазини</b>\n\nавіпвіп",
             parse_mode="HTML",
         )
 
